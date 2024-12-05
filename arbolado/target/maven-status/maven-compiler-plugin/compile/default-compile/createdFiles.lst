@@ -1,5 +1,6 @@
-Databaseconnection\DatabaseConnection.class
 LogoutServlet\LogoutServlet.class
+LoginServlet\Usuario.class
+Databaseconnection\DatabaseConnection.class
 EstadisticasServlet\EstadisticasServlet.class
 LoginServlet\LoginServlet.class
 RegistrarArbolServlet\RegistrarArbolServlet.class
