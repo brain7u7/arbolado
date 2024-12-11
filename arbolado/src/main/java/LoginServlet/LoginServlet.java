@@ -1,11 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Servlet.java to edit this template
- */
-/**
- *
- * @author bsanc
- */
 package LoginServlet;
 
 import Databaseconnection.DatabaseConnection;
@@ -23,6 +15,14 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Servlet.java to edit this template
+ */
+/**
+ *
+ * @author bsanc
+ */
 @WebServlet("/login")
 public class LoginServlet extends HttpServlet {
     private static final Logger LOGGER = Logger.getLogger(LoginServlet.class.getName());
@@ -47,7 +47,7 @@ public class LoginServlet extends HttpServlet {
                 HttpSession session = request.getSession();
                 session.setAttribute("user_name", usuario.getNombre());
                 session.setAttribute("user_role", usuario.getRol());
-                session.setMaxInactiveInterval(30 * 60); // 30 minutos de sesión
+                session.setMaxInactiveInterval(30 * 60); // 30 minutos
                 LOGGER.log(Level.INFO, "Usuario autenticado: {0}, Rol: {1}", new Object[]{usuario.getNombre(), usuario.getRol()});
                 redirigirSegunRol(usuario.getRol(), response);
             } else {

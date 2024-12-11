@@ -28,16 +28,6 @@
         <servlet-name>LoginServlet</servlet-name>
         <url-pattern>/login</url-pattern>
     </servlet-mapping>
-    
-    <servlet>
-    <servlet-name>GestionUsuariosServlet</servlet-name>
-    <servlet-class>GestionUsuariosServlet.GestionUsuariosServlet</servlet-class>
-</servlet>
-<servlet-mapping>
-    <servlet-name>GestionUsuariosServlet</servlet-name>
-    <url-pattern>/gestionUsuarios</url-pattern>
-</servlet-mapping>
-
 
     <servlet>
         <servlet-name>ConsultarArbolesServlet</servlet-name>
